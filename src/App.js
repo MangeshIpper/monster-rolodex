@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Component } from "react";
 
@@ -21,9 +20,20 @@ class App extends Component {
       );
   }
 
+  onSearchChange = (e) => {
+    const searchField = e.target.value.toLowerCase();
+    this.setState(() => {
+      return { searchField };
+    });
+  }
+
   render() {
-    const filteredMonster = this.state.monsters.filter((monster) => {
-      return monster.name.toLowerCase().includes(this.state.searchField);
+
+    const {monsters, searchField} = this.state;
+    const {onSearchChange} = this;
+
+    const filteredMonster = monsters.filter((monster) => {
+      return monster.name.toLowerCase().includes(searchField);
     });
 
     return (
@@ -32,12 +42,7 @@ class App extends Component {
           type="search"
           className="serch-box"
           placeholder="Search monsters"
-          onChange={(e) => {
-            const searchField = e.target.value.toLowerCase();
-            this.setState(() => {
-              return { searchField };
-            });
-          }}
+          onChange={onSearchChange}
         />
         <p>Hello {this.state.name}.</p>
         <button onClick={() => this.setState({ name: "Sangesh" })}>
