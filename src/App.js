@@ -1,5 +1,7 @@
 import "./App.css";
 import { Component } from "react";
+import CardList from "./components/card-list/card-list.component";
+import SearchBox from "./components/search-box/search-box.component";
 
 class App extends Component {
   constructor() {
@@ -38,19 +40,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <input
-          type="search"
-          className="serch-box"
-          placeholder="Search monsters"
-          onChange={onSearchChange}
-        />
-        <p>Hello {this.state.name}.</p>
-        <button onClick={() => this.setState({ name: "Sangesh" })}>
-          click
-        </button>
-        {filteredMonster.map((item, index) => (
-          <h1 key={item.id}>{item.name}</h1>
-        ))}
+       
+        <SearchBox className="monsters-search-box" onChangeHandler={onSearchChange} placeholder="Search Monsters" />
+        <CardList monsters={filteredMonster} />
       </div>
     );
   }
