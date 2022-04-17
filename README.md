@@ -1,6 +1,6 @@
 # Monster RoloDex
 
-It is a react SPA web application build by using React and external API data.
+It is a react SPA web application build by using React and external API data. This project build by using class based components.
 # Table of Contents
 
 1. [Objective](#section1)<br>
@@ -12,7 +12,7 @@ It is a react SPA web application build by using React and external API data.
 
   ## 1. Objective <a id=section1></a>
 
-In this react project I have used JSX to build Monster Rolodex. In this project I have implemented Searching functionality with attractive card UI to display dynamic data. Search button is there to filter data as per your word typing.
+In this react project I have used JSX to build Monster Rolodex. In this project I have used class based components. In this project I have implemented Searching functionality with attractive card UI to display dynamic data. Search button is there to filter data as per your word typing.
 
 To run this project you have to following libraries provided in section 2.
 
