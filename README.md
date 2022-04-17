@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Monster RoloDex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is a react SPA web application build by using React and external API data.
+# Table of Contents
 
-## Available Scripts
+1. [Objective](#section1)<br>
+2. [Importing Packages](#section2)<br>
+3. [UI view for Desktop](#section3)<br>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ## 1. Objective <a id=section1></a>
 
-### `npm test`
+In this react project I have used JSX to build Monster Rolodex. In this project I have implemented Searching functionality with attractive card UI to display dynamic data. Search button is there to filter data as per your word typing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run this project you have to following libraries provided in section 2.
 
-### `npm run build`
+## 2. Importing Packages  <a id=section2></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To build the UI, and display data I have used 3rd party api to fetch the data and similarly as per data availability got images from 3rd party website. I have used "https://jsonplaceholder.typicode.com/users" to get users data and to get the images I have used "https://robohash.org/${id}?set=set2&size=180x180" API. If you add numbers like 1, 2, 3 instead of ${id} in the above link you will get new image with 180x180 pixcel size.
+You can change its image size as per your need.
+I also added "Bigelow Rules" font from "https://fonts.google.com/specimen/Bigelow+Rules?query=bigel#standard-styles" this link for its title.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project you have to follow following steps,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository (git clone "repository name"),
+2. Install npm (npm install),
+3. npm start
 
-### `npm run eject`
+After these command you will see in a browser that there is a new tab in which your project will run (http://localhost:3000);
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. UI view for Desktop <a id=section3></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![rolodex1](https://user-images.githubusercontent.com/25785047/163715041-807ae959-f8e5-495c-8235-32d4490c9f3f.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![rolodex2](https://user-images.githubusercontent.com/25785047/163715057-5b0ea6f3-f98c-492c-9327-a36c6d692b66.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Thank you
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Checkout more details about me on LinkedIn: https://www.linkedin.com/in/mangeshipper/
